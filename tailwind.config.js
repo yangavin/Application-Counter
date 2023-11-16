@@ -19,6 +19,9 @@ export default {
           "100%": { transform: "translateY(0)" },
         },
       },
+      fontFamily: {
+        kdam: ["Kdam Thmor Pro", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -42,29 +42,34 @@ const App = () => {
   }, [counts]);
 
   return (
-    <div className=" flex justify-around">
-      <Counter
-        count={counts.apps}
-        increment={increment("apps")}
-        decrement={decrement("apps")}
-        title="Applications"
-        color="red"
-      />
-      <Counter
-        count={counts.interviews}
-        increment={increment("interviews")}
-        decrement={decrement("interviews")}
-        title="Interviews"
-        color="yellow"
-      />
-      <Counter
-        count={counts.accepted}
-        increment={increment("accepted")}
-        decrement={decrement("accepted")}
-        title="Accepted"
-        color="green"
-      />
-    </div>
+    <>
+      <h1 className="mb-24 mt-10 text-center text-7xl text-slate-200">
+        Job Applications
+      </h1>
+      <div className=" flex justify-around">
+        <Counter
+          count={counts.apps}
+          increment={increment("apps")}
+          decrement={decrement("apps")}
+          title="Applications"
+          color="red"
+        />
+        <Counter
+          count={counts.interviews}
+          increment={increment("interviews")}
+          decrement={decrement("interviews")}
+          title="Interviews"
+          color="yellow"
+        />
+        <Counter
+          count={counts.accepted}
+          increment={increment("accepted")}
+          decrement={decrement("accepted")}
+          title="Accepted"
+          color="green"
+        />
+      </div>
+    </>
   );
 };
 
