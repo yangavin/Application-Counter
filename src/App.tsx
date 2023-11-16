@@ -48,6 +48,7 @@ const App = () => {
         increment={increment("apps")}
         decrement={decrement("apps")}
         title="Applications"
+        color="red"
       />
       <Counter
         count={counts.interviews}
